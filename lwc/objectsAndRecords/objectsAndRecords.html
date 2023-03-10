@@ -1,0 +1,43 @@
+<template>
+    <lightning-layout-item>
+        <div class="slds-text-align_center">
+            <lightning-combobox name="ObjectList" label="Select Object" onchange={HandleFields} value={selectedObject}
+                options={objectList} placeholder="Object List">Object</lightning-combobox>
+        </div>
+    </lightning-layout-item>
+    <lightning-layout-item>
+        <lightning-layout-item>
+
+
+            <c-field-Names onchangeinfields={Handlecheckbox} value={SelectedFieldList}></c-field-Names>
+        </lightning-layout-item>
+        <lightning-layout-item>
+            <c-records></c-records>
+
+        </lightning-layout-item>
+    </lightning-layout-item>
+
+    <!--
+        <lightning-card class="first-container" title="My Salesforce Objects"></lightning-card>
+          <div class="button-select-container">
+            <lightning-combobox class="object-combo" label="Select Object"
+                                 value={selectedObject} 
+                                options={objectList} 
+                                onchange={handleFields}>
+            </lightning-combobox>
+            
+          </div>
+          <div>
+            <div class="first">
+              <c-field-Names onchangeinfields={Handlecheckbox} value={SelectedFieldList}></c-field-Names>
+            </div>
+            <div class="second">
+                <c-records></c-records>
+            </div>      
+          </div>
+      
+      -->
+
+
+
+</template>
